@@ -1,0 +1,18 @@
+User-Agent: *
+Allow: /
+
+Disallow: /Home/
+Disallow: /hside/
+Disallow: /Kirara/
+Disallow: /kirara/
+Disallow: /trang-chu/
+
+# Disallow: *.json
+# Disallow: *.js
+# Disallow: *.css
+Disallow: *.bin
+Disallow: *.data
+Disallow: *.dll
+
+Sitemap: https://kirakissoul.github.io/sitemap.xml
+

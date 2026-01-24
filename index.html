@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+  <meta name="google-site-verification" content="VdrcFCaIMaJs8fBCZdpHhP_Q3Eo9kkTRUPU3wLnuwl4" />
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXVPJ74E13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZXVPJ74E13');
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Kirakissoul",
+  "alternateName": ["Kirakishou", "Kira Search", "Kira Tool"],
+  "url": "https://kirakissoul.github.io/",
+  "description": "Trang tìm kiếm và công cụ tổng hợp. Dự án lập trình và tài nguyên thử nghiệm cá nhân.",
+  "inLanguage": "vi-VN"
+}
+</script>
+  
+  <meta name="robots" content="index, follow">
+  <meta name="title" content="Kirakissoul – Trang tìm kiếm tổng hợp">
+    <meta name="description" content="Trang web tìm kiếm và công cụ tổng hợp. Dự án lập trình và tài nguyên thử nghiệm cá nhân.">
+    <meta name="keywords" content="Kirakissoul, Kirakishou, công cụ tìm kiếm, lập trình, thử nghiệm, công cụ, website tổng hợp, search engine, tools, all-in-one website, experimentation">
+    <meta name="site_name" content="Kirakissoul">
+    <link rel="canonical" href="https://kirakissoul.github.io/">
+    
+    
+    <!--icon-->
+    <link rel="icon" href="https://kirakissoul.github.io/favicon.ico" type="image/x-icon"/>
+  <link rel="icon" href="https://kirakissoul.github.io/icon_16x16.png" type="image/png"/>
+  <link rel="icon" href="https://kirakissoul.github.io/icon_32x32.png" type="image/png"/>
+  <link rel="icon" href="https://kirakissoul.github.io/icon_128x128.png" type="image/png"/>
+    
+    <!-- Open Graph -->
+  <meta property="og:title" content="Kirakissoul – Trang tìm kiếm tổng hợp">
+  <meta property="og:image" content="https://kirakissoul.github.io/img_seo.png"/>
+  <meta property="og:site_name" content="Kirakissoul">
+  <meta property="og:locale" content="vi_VN"/>
+
+    <!-- Twitter -->
+  
+<meta name="twitter:title" content="Kirakissoul – Trang tìm kiếm tổng hợp">
+<meta name="twitter:description" content="Trang tìm kiếm và công cụ tổng hợp.">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Google -->
+<meta name="application-name" content="Kirakissoul">
+
+    
+    
+    <title>Kirakissoul - Trang tìm kiếm tổng hợp</title>
+    <style>
+        /* --- Tối ưu hóa hiệu năng hệ thống --- */
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent; /* Xóa bóng khi chạm trên mobile */
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0d0d0d;
+            overflow: hidden; /* Ngăn chặn cuộn kép bên ngoài iframe */
+        }
+    
+    img {
+      pointer-events: none;  
+}
+
+        /* --- Khung nhìn --- */
+        #web_home_WebHome {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            will-change: transform; /* Kích hoạt tối ưu phần cứng */
+            z-index: 1;
+        }
+
+        #loading_WebHome {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #7d2ae8;
+            font-family: serif;
+            letter-spacing: 3px;
+            z-index: 0;
+            text-shadow: 0 0 10px #4a0080;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="loading_WebHome">LOADING...</div>
+    <iframe id="web_home_WebHome" 
+            src="about:blank" 
+            importance="high"></iframe>
+
+    <script>
+        const SECRET_PATH = "aHR0cHM6Ly9raXJha2lzc291bC5naXRodWIuaW8vS2lyYXJhLw==";
+
+        function giai_ma_ma_phap(chuoi_bi_mat) {
+            try { return atob(chuoi_bi_mat); } 
+            catch (e) { return null; }
+        }
+
+        function trieu_hoi_cung_dien() {
+            const khung_nhin = document.getElementById('web_home_WebHome');
+            const duong_dan_thuc = giai_ma_ma_phap(SECRET_PATH);
+            
+            if (duong_dan_thuc) {
+                // Thay đổi cách gán để trình duyệt không tạo thêm history entry thừa thãi
+                khung_nhin.contentWindow.location.replace(duong_dan_thuc);
+            }
+        }
+
+        // Dùng DOMContentLoaded sẽ nhanh hơn window.onload một chút
+        document.addEventListener('DOMContentLoaded', trieu_hoi_cung_dien);
+    </script>
+</body>
+</html>

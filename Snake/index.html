@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--icon-->
+      <link rel="icon" href="https://kirakissoul.github.io/favicon.ico" type="image/x-icon"/>
+  <link rel="icon" href="https://kirakissoul.github.io/icon_16x16.png" type="image/png"/>
+  <link rel="icon" href="https://kirakissoul.github.io/icon_32x32.png" type="image/png"/>
+  <link rel="icon" href="https://kirakissoul.github.io/icon_128x128.png" type="image/png"/>
+ 
+    <!-- SEO --> 
+<meta name="robots" content="index, follow"> 
+<meta name="site_name" content="Kirakissoul"> 
+<meta name="title" content="Trò Chơi Rắn Săn Mồi Cổ Điển (Classic Snake Game)"> 
+<meta name="image" content="https://kirakissoul.github.io/image/snake.webp"/> 
+<meta name="description" content="Trải nghiệm trò chơi Rắn săn mồi đỉnh cao một thời. Với lối chơi cổ điển nhưng mang đậm phong cách hiện đại, hãy thử thách phản xạ và kỹ năng điều khiển của bạn ngay trên trình duyệt."> 
+<meta name="keywords" content="Kirakissoul, Snake Game, Snake Game Online, Classic Snake, Rắn săn mồi, Chơi game rắn, Rắn săn mồi cổ điển">  
+
+<!-- Open Graph --> 
+<meta property="og:description" content="Trải nghiệm trò chơi Rắn săn mồi đỉnh cao một thời. Với lối chơi cổ điển nhưng mang đậm phong cách hiện đại, hãy thử thách phản xạ và kỹ năng điều khiển của bạn ngay trên trình duyệt."/> 
+<meta property="og:title" content="Trò Chơi Rắn Săn Mồi Cổ Điển (Classic Snake Game)"/> 
+<meta property="og:image" content="https://kirakissoul.github.io/image/snake.webp"/> 
+<meta property="og:type" content="website"> 
+<meta property="og:url" content=""/> 
+<meta property="og:site_name" content="Kirakissoul"> 
+<meta property="og:locale" content="vi_VN"/>  
+
+<!-- Google --> 
+<meta name="application-name" content="Kirakissoul">  
+
+<!-- Twitter Tags--> 
+<meta name="twitter:card" content="summary_large_image"> 
+<meta name="twitter:title" content="Kirakissoul - Trò Chơi Rắn Săn Mồi Cổ Điển (Classic Snake Game)"/> 
+<meta name="twitter:description" content="Trải nghiệm trò chơi Rắn săn mồi đỉnh cao một thời. Với lối chơi cổ điển nhưng mang đậm phong cách hiện đại, hãy thử thách phản xạ và kỹ năng điều khiển của bạn ngay trên trình duyệt."/> 
+<meta name="twitter:image" content="https://kirakissoul.github.io/image/snake.webp"/>  
+    
+    <title>Rắn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Snake.css">
+</head>
+<body>
+    <div class="game-container">
+                <div class="score-board">
+            <p id="score">Score: 0</p>
+        </div>
+        <div class="game-screen">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+        <p id="footer">Kirakissoul</p>
+        <div class="controls">
+            <div class="dpad">
+                <button id="up">🔼</button>
+                <div class="dpad-middle">
+                    <button id="left">◀️</button>
+                    <button id="pause">⏸️</button>
+                    <button id="right">▶️</button>
+                </div>
+                <button id="down">🔽</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bảng Game Over -->
+    <div id="gameOverScreen" class="game-over-screen">
+        <div class="game-over-content">
+            <h2>Game Over</h2>
+            <p id="finalScore">Score: 0</p>
+            <button id="restart">Chơi lại</button>
+        </div>
+    </div>
+
+    <script src="Snake.js"></script>
+</body>
+</html>

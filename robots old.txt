@@ -1,0 +1,64 @@
+User-Agent: *
+Allow: /
+Allow: /qr/
+Allow: /Snake/
+Allow: /sec/
+Allow: /ptb2/
+
+Disallow: /assets/
+Disallow: /image/
+Disallow: /logo/
+Disallow: /Home/
+Disallow: /lgc.ico
+Disallow: /xtracss/
+Disallow: /hside/
+Disallow: /logo/
+Disallow: /video/
+Disallow: /Home/Kirakishou.html
+Disallow: /Home/Home.css
+Disallow: /Home/Home.js
+Disallow: /mediaH.css
+Disallow: /reset.css
+Disallow: /hside/hside.html
+Disallow: /hside/hside.css
+Disallow: /hside/hside.js
+Disallow: /hside/
+Disallow: /Kirara/
+Disallow: /kirara/
+Disallow: /xtracss/
+Disallow: /trang-chu/Home.css
+Disallow: /trang-chu/Home.js
+
+Disallow: Kirara/image/
+Disallow: Kirara/logo/
+Disallow: Kirara/Home/
+Disallow: Kirara/lgc.ico
+Disallow: Kirara/xtracss/
+Disallow: Kirara/hside/
+Disallow: Kirara/logo/
+Disallow: Kirara/video/
+Disallow: Kirara/Home/Kirakishou.html
+Disallow: Kirara/Home/Home.css
+Disallow: Kirara/Home/Home.js
+Disallow: Kirara/mediaH.css
+Disallow: Kirara/reset.css
+Disallow: Kirara/hside/hside.html
+Disallow: Kirara/hside/hside.css
+Disallow: Kirara/hside/hside.js
+Disallow: Kirara/hside/
+Disallow: Kirara/Kirara/
+Disallow: Kirara/kirara/
+Disallow: Kirara/assets/
+Disallow: Kirara/xtracss/
+Disallow: Kirara/trang-chu/Home.css
+Disallow: Kirara/trang-chu/Home.js
+
+
+Sitemap: https://kirakissoul.github.io/sitemap.xml
+
+#Sitemap: https://kirakissoul.github.io/qr/sitemap.xml
+#Sitemap: https://kirakissoul.github.io/Snake/sitemap.xml
+
+# Tối ưu hóa tốc độ cào dữ liệu
+#Crawl-delay:
+

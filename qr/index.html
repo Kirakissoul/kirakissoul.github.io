@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./qr.css">
+  
+     <title>Quét và Tạo Mã QR Trực Tuyến</title>
+  
+  <!--icon-->
+      <link rel="icon" href="https://kirakissoul.github.io/favicon.ico" type="image/x-icon"/>
+  <link rel="icon" href="https://kirakissoul.github.io/icon_16x16.png" type="image/png"/>
+  <link rel="icon" href="https://kirakissoul.github.io/icon_32x32.png" type="image/png"/>
+  <link rel="icon" href="https://kirakissoul.github.io/icon_128x128.png" type="image/png"/>
+ 
+  <!-- SEO --> 
+  <meta property="title" content="Quét và Tạo Mã QR Trực Tuyến"/> 
+  <meta property="description" content="Công cụ quét và tạo mã QR code miễn phí, an toàn và chuyên nghiệp nhất. Hỗ trợ quét qua camera, chế độ an toàn và tải lên định dạng PNG/SVG chất lượng cao."/> 
+  <meta name="keywords" content="quét mã qr, tạo mã qr, qr code scanner, qr code generator, online qr tool, kirakishou, kirakissoul, bảo mật qr, công cụ web">  
+
+<!-- Open Graph --> 
+<meta property="og:description" content="Công cụ quét và tạo mã QR code miễn phí, an toàn và chuyên nghiệp nhất. Hỗ trợ quét qua camera, chế độ an toàn và tải lên định dạng PNG/SVG chất lượng cao."/> 
+<meta property="og:title" content="Quét và Tạo Mã QR Trực Tuyến"/> 
+<meta property="og:image" content=""/> 
+<meta property="og:url" content="https://kirakissoul.github.io/qr/"/> 
+<meta property="og:site_name" content="Kirakissoul"> 
+<meta property="og:locale" content="vi_VN"/>  
+
+<!-- Google --> 
+<meta name="application-name" content="Kirakissoul">  
+<!-- Twitter Tags--> 
+  
+<meta name="twitter:title" content="Quét và Tạo Mã QR Trực Tuyến"/> 
+<meta name="twitter:description" content="Công cụ quét và tạo mã QR code miễn phí, an toàn và chuyên nghiệp nhất. Hỗ trợ quét qua camera, chế độ an toàn và tải lên định dạng PNG/SVG chất lượng cao."/> 
+<meta name="twitter:image" content=""/>  
+  
+    <style>
+    
+    /* CSS Reset đơn giản cho toàn bộ phần tử */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+    </style>
+</head>
+<body>
+  
+  <div id="vung-qr">
+
+  <div id="quet-qr">
+    <h1>Quét mã QR</h1>
+<label style="color: purple; font-weight: bold;">
+    <input type="checkbox" id="quetQR_Sandbox" checked> Tắt thực thi QR (Chế độ an toàn)
+</label>
+    <br>
+    
+    <!-- Nút bật/tắt camera -->
+    <button id="toggle-camera">Bật Camera</button>
+    <div id="camera-container">
+        <video id="camera" width="100%" height="auto" autoplay></video>
+    </div>
+
+    <!-- Input tải ảnh lên -->
+    <input type="file" id="file-input" accept="image/*" />
+
+    <!-- Kết quả giải mã -->
+    <div id="ketqua-giai-ma-qr"></div>
+
+    <!-- Hiển thị ảnh được vẽ lên canvas -->
+    <div id="preview-qr"></div>
+
+  </div>
+  <br>
+  <br>
+    <div id="tao-qr">
+  <h1>Tạo mã QR</h1>
+  <textarea id="qrText" placeholder="Nhập"></textarea>
+  <br>
+  <button onclick="generateQRTaoQR()">Tạo mã QR</button>
+  <button onclick="downloadPNGTaoQR()">Tải PNG (2000px)</button>
+  <button onclick="downloadSVGTaoQR()">Tải SVG</button>
+    <br>
+  <div id="qr-container"></div>
+
+  </div>
+    
+</div>
+
+     <!-- QR Code Styling Library -->
+  <script src="qr-code-styling.js"></script>
+  <script src="jsQR.js"></script>
+
+<script src="qr.js"></script>
+</body>
+</html>
