@@ -14,5 +14,6 @@ Disallow: *.bin
 Disallow: *.data
 Disallow: *.dll
 
-Sitemap: https://kirakissoul.github.io/sitemap.xml
+Sitemap: /sitemap.xml
+# Sitemap: https://kirakissoul.github.io/sitemap.xml
 
